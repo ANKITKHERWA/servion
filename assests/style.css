@@ -1,0 +1,496 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+.container2 {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 30px 0 0;
+  width: 100%;
+}
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.dropdown.show .dropdown-icon {
+  transform: rotate(180deg);
+}
+/* leter spacing  */
+.let-space-4 {
+  letter-spacing: 4px;
+}
+/* font-size */
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-44 {
+  font-size: 44px;
+}
+/* border color  */
+.br-cl {
+  border: #ffffff4d;
+}
+/* text-color */
+.text-blue {
+  color: #003873;
+}
+.text-yel {
+  color: #fbad18;
+}
+.aco-cl {
+  color: #0e1d5d;
+}
+/* hover  */
+.cl:hover {
+  color: #fbad18;
+}
+.drop-up svg {
+  fill: #fbad18;
+}
+.icon-rotate {
+  transition: transform 0.3s ease;
+}
+.drop-up:hover .icon-rotate {
+  transform: rotate(180deg);
+}
+.rotate-icon {
+  transition: transform 0.5s ease;
+}
+.list:hover .rotate-icon {
+  transform: rotate(100deg);
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate-infinite {
+  animation: rotate360 2s linear infinite;
+}
+/* bg-color */
+
+.bg-cl-button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(84deg, #fbad1800 2.38%, #fbad18 70.64%), #ff844c;
+  border: 2px solid #ff844c;
+  z-index: 1;
+}
+
+.bg-cl-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #07b6e5;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.bg-cl-button:hover::before {
+  right: 0;
+}
+.bg-wh:hover {
+  background-color: white;
+  transition: all 0.2s ease;
+  border-radius: 20px 0 0 20px;
+}
+.bg-wh:hover a {
+  border-top: 1px solid transparent !important;
+  background-color: white !important; /* Just in case */
+}
+.b {
+  background-color: aliceblue;
+}
+.bg-nav-blue {
+  background-color: #0e1d5d;
+}
+.off-bg {
+  background-color: aliceblue;
+}
+/* padding */
+.p {
+  padding: 57px 72px 57px 51px;
+}
+.p-6 {
+  padding: 6px 0 6px 0;
+}
+.p-8 {
+  padding: 8px 0 8px 0;
+}
+.p-15 {
+  padding: 15px;
+}
+.pl-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-50 {
+  padding: 13px 50px;
+}
+.pb-300 {
+  padding-bottom: 300px;
+}
+.p-l-50 {
+  padding: 13px 74px;
+}
+.pl-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.p-12 {
+  padding: 12.5px 0;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pl-35 {
+  padding-left: 35px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.pr-13 {
+  padding-right: 13px;
+}
+.pr-25 {
+  padding-right: 25px;
+}
+.pr-72 {
+  padding-left: 51px;
+}
+.pt-18 {
+  padding-top: 18px;
+}
+.pb-19 {
+  padding-bottom: 18px;
+}
+.pl-24 {
+  padding-left: 24px;
+}
+.pl-26 {
+  padding-left: 26px;
+}
+.pl-100 {
+  padding-left: 50px;
+}
+.pt-44 {
+  padding-top: 44px;
+}
+.pb-44 {
+  padding-bottom: 44px;
+}
+.pt-75 {
+  padding-top: 75px;
+}
+.pb-75 {
+  padding-bottom: 75px;
+}
+/* margin */
+.mt-70 {
+  margin-top: 70px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mx-auto {
+  margin: auto;
+}
+.mt-44 {
+  margin-top: 44px;
+}
+.mb-44 {
+  margin-bottom: 44px;
+}
+/* width */
+.w-423 {
+  width: 423px;
+}
+.max-w-370 {
+  max-width: 370px;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-fit {
+  max-width: fit-content;
+}
+.max-w-293 {
+  max-width: 293px;
+}
+.max-w-451 {
+  max-width: 451px;
+}
+.max-w-480 {
+  max-width: 480px;
+}
+.max-w-1450 {
+  max-width: 1450px;
+}
+.w-260 {
+  width: 260px;
+}
+/* height */
+.h-full {
+  height: 100%;
+}
+.vh-100 {
+  height: 100vh;
+}
+.max-h-498 {
+  max-height: 498px;
+}
+.h-200 {
+  height: 200px;
+}
+.h-500 {
+  height: 500px;
+}
+/* postion */
+.left-478 {
+  left: -478px;
+}
+.top-10 {
+  top: 60px;
+}
+.top-150 {
+  top: 150%;
+}
+.top-272 {
+  top: -272px;
+}
+.left-50 {
+  left: -50%;
+}
+.bg-start {
+  background-image: url('/assests/img/png/bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 534px;
+  max-height: 417px;
+}
+.bg-start2 {
+  background-image: url('/assests/img/png/bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-height: 417px;
+}
+/* video  */
+.video-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Fill horizontally */
+  height: 100%; /* Fill vertically */
+  object-fit: cover; /* Crop perfectly */
+  z-index: 1;
+}
+
+.video-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  z-index: 1;
+}
+.content-on-video {
+  position: relative;
+  z-index: 2;
+}
+/* border-radius */
+.b-radius-10 {
+  border-radius: 10px 0 0 10px;
+}
+
+.dropdown-right {
+  position: relative;
+}
+.inte-cl {
+  color: #0076a8;
+}
+/* Hide initially */
+.sub-menu-right {
+  display: none;
+  position: absolute;
+  top: -200px;
+  left: 100%; /* Show at right side */
+  padding: 1rem;
+  width: 350px;
+  height: 300px;
+  z-index: 0;
+  transition: all 0.3s ease;
+  padding: 0px 72px 44px 51px;
+}
+
+/* Show on hover */
+.dropdown-right:hover .sub-menu-right {
+  display: block;
+}
+.sub-menu-right a:hover {
+  color: #0076a8;
+}
+.underlin:hover {
+  text-decoration: underline;
+}
+
+.icon-toggle {
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+  margin-top: 103px;
+}
+.pos-static {
+  position: static !important;
+}
+.left-0 {
+  left: 0%;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.btn {
+  background-color: transparent !important; /* Background clear */
+  color: #0e1d5d !important; /* Inherit parent text color */
+  box-shadow: none !important; /* Remove shadow */
+  border: none !important; /* Remove border if any */
+}
+.accordion-button {
+  background-color: transparent !important; /* Background clear */
+  color: #0e1d5d !important; /* Inherit parent text color */
+  box-shadow: none !important; /* Remove shadow */
+  border: none !important; /* Remove border if any */
+}
+.accordion-button[aria-expanded='true'] .custom-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button .custom-icon {
+  transition: transform 0.3s ease;
+}
+.accordion-button::after {
+  display: none !important;
+}
+.accordion-body {
+  padding: 0 0 0 15px;
+}
+.z-index {
+  z-index: 9999;
+}
+.offcanvas-body {
+  overflow-y: scroll !important;
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE 10+ */
+}
+.offcanvas-body::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+.offcanvas-end {
+  border: none;
+}
+/* Scrollbar ka width aur background */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track ka color */
+::-webkit-scrollbar-track {
+  background: white; /* Track ka color */
+}
+
+/* Scrollbar thumb ka color */
+::-webkit-scrollbar-thumb {
+  background: #0e1d5d; /* Thumb ka color */
+}
+.menu-bar {
+  height: 3px;
+  width: 24px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Button rotate transition */
+.menu-toggle {
+  transition: transform 0.4s ease;
+}
+
+/* Hamburger lines style */
+.menu-bar {
+  width: 25px;
+  height: 2px;
+  background-color: #e3e3e3;
+  transition: 0.3s ease;
+}
+
+/* Rotate button when open */
+[aria-expanded='true'].menu-toggle {
+  transform: rotate(180deg);
+}
+
+/* Hamburger to Cross animation */
+[aria-expanded='true'] .menu-bar:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+[aria-expanded='true'] .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+[aria-expanded='true'] .menu-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
