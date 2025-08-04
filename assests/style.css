@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 .container2 {
-  max-width: 1900px;
+  max-width: 1640px;
   margin: 0 auto;
   padding: 0 30px 0 0;
   width: 100%;
@@ -298,6 +298,12 @@ body {
 .top-272 {
   top: -272px;
 }
+.top-9 {
+  top: -9px;
+}
+.left-38 {
+  left: 38%;
+}
 .left-50 {
   left: -50%;
 }
@@ -358,11 +364,11 @@ body {
 .sub-menu-right {
   display: none;
   position: absolute;
-  top: -200px;
+  top: -214px;
   left: 100%; /* Show at right side */
   padding: 1rem;
   width: 350px;
-  height: 300px;
+  height: 319px;
   z-index: 0;
   transition: all 0.3s ease;
   padding: 0px 72px 44px 51px;
@@ -375,8 +381,9 @@ body {
 .sub-menu-right a:hover {
   color: #0076a8;
 }
-.underlin:hover {
-  text-decoration: underline;
+.hover-underline:hover {
+  text-decoration: underline !important;
+  color: #003873 !;
 }
 
 .icon-toggle {
@@ -390,8 +397,17 @@ body {
 .modal-backdrop {
   margin-top: 70px;
 }
+.z-50 {
+  z-index: -50;
+}
 .pos-static {
   position: static !important;
+}
+.top-14 {
+  top: 14px;
+}
+.left-49 {
+  left: 49%;
 }
 .left-0 {
   left: 0%;
@@ -493,4 +509,16 @@ body {
 
 [aria-expanded='true'] .menu-bar:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
+}
+#contactInfo {
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+#contactInfo.scrolled {
+  opacity: 0;
+  transform: translate(100px, -50px);
+  pointer-events: none;
+  padding: 0px !important;
+  height: 0px !important;
 }
