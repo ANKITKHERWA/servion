@@ -9,10 +9,10 @@ body {
   width: 100%;
 }
 .container2 {
-  max-width: 1640px;
+  max-width: 1502px;
   margin: 0 auto;
-  padding: 0 30px 0 0;
   width: 100%;
+  padding-right: 100px;
 }
 .container3 {
   max-width: 1200px;
@@ -75,6 +75,12 @@ body {
 .drop-up svg {
   fill: #fbad18;
 }
+.inter svg {
+  fill: #003873;
+}
+.int:hover {
+  color: #0076a8;
+}
 .icon-rotate {
   transition: transform 0.3s ease;
 }
@@ -86,6 +92,12 @@ body {
 }
 .list:hover .rotate-icon {
   transform: rotate(100deg);
+}
+.trans {
+  transition: transform 0.3s ease;
+}
+.curser1 {
+  cursor: pointer;
 }
 @keyframes rotate360 {
   0% {
@@ -123,15 +135,82 @@ body {
 .bg-cl-button:hover::before {
   right: 0;
 }
-.bg-wh:hover {
-  background-color: white;
-  transition: all 0.2s ease;
-  border-radius: 20px 0 0 20px;
+.bg-wh {
+  position: relative;
+  z-index: 2;
+  padding-right: 20px;
 }
-.bg-wh:hover a {
-  border-top: 1px solid transparent !important;
-  background-color: white !important; /* Just in case */
+
+/* White background layer */
+.bg-wh span {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px 0 0 15px;
+  border-top: transparent !important;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  width: 120%;
+  left: -20px;
+  height: 100%;
+  top: -2px;
 }
+.bg-wh1 .cl::after {
+  position: absolute;
+  content: '';
+  border-radius: 15px 0 0 15px;
+  border-top: transparent !important;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  width: 120%;
+  left: -20px;
+  height: 100%;
+  top: -2px;
+}
+.bg-wh a {
+  z-index: 22;
+  position: relative;
+}
+.bg-wh a:hover span {
+  opacity: 1;
+  border: transparent !important;
+}
+.bg-wh1:hover .cl {
+  color: #fbad18;
+}
+
+.bg-wh::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: transparent;
+  z-index: 44;
+  left: 0px;
+  top: 0px;
+}
+/* .bg-wh1 a:hover span {
+  opacity: 1;
+  border: transparent !important;
+} */
+/* Sirf jab <a> hover ho */
+/* .bg-wh:has(a:hover)::before {
+  opacity: 1;
+} */
+
+/* <a> ka border hide jab hover ho */
+/* .bg-wh:has(a:hover) a {
+  border-color: transparent !important;
+} */
+
+/* Text & content upar rahe */
+/* .bg-wh a {
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.3s ease;
+} */
+
 .b {
   background-color: aliceblue;
 }
@@ -208,7 +287,7 @@ body {
   padding-left: 26px;
 }
 .pl-100 {
-  padding-left: 50px;
+  padding-left: 60px;
 }
 .pt-44 {
   padding-top: 44px;
@@ -259,6 +338,9 @@ body {
 }
 .max-w-451 {
   max-width: 451px;
+}
+.max-w-462 {
+  min-width: 462px;
 }
 .max-w-480 {
   max-width: 480px;
@@ -311,8 +393,8 @@ body {
   background-image: url('/assests/img/png/bg.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  max-width: 534px;
-  max-height: 417px;
+  max-width: 575px;
+  max-height: 428px;
 }
 .bg-start2 {
   background-image: url('/assests/img/png/bg.jpg');
@@ -364,20 +446,34 @@ body {
 .sub-menu-right {
   display: none;
   position: absolute;
-  top: -214px;
-  left: 100%; /* Show at right side */
+  top: -230px;
+  right: -406px; /* Show at right side */
   padding: 1rem;
-  width: 350px;
-  height: 319px;
-  z-index: 0;
+  width: 406px;
+  height: 493;
+  z-index: 50;
   transition: all 0.3s ease;
-  padding: 0px 72px 44px 51px;
+  padding: 50px 72px 44px 51px;
+  background-color: white;
+}
+
+.bg-wh1 {
+  overflow: visible !important ;
+  z-index: 56;
+}
+
+.bg-wh1:hover .sub-menu-right {
+  display: block;
+}
+.bg-wh1:hover span {
+  opacity: 1;
 }
 
 /* Show on hover */
-.dropdown-right:hover .sub-menu-right {
+.dropdown-right a:hover .sub-menu-right {
   display: block;
 }
+
 .sub-menu-right a:hover {
   color: #0076a8;
 }

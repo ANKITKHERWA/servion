@@ -2,6 +2,21 @@
   .fs-18 {
     font-size: 15px;
   }
+  .fs-44 {
+    font-size: 30px;
+  }
+  .pl-100 {
+    padding-left: 30px;
+  }
+  .container2 {
+    padding-right: 30px;
+  }
+  .p {
+    padding: 57px 30px 57px 40px;
+  }
+  .px-4 {
+    padding: 44px 8px;
+  }
 }
 
 @media (max-width: 1199px) {

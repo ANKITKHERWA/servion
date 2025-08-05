@@ -26,7 +26,7 @@
             </video>
             <div class="content-on-video">
                 <div class="container hide position-fixed ">
-                    <div class="d-flex flex-column  flex-md-row gap-3 align-items-center text-white justify-content-end pt-18 "
+                    <div class="d-flex flex-column  flex-md-row gap-3 align-items-center text-white justify-content-end pt-18"
                         id="contactInfo">
                         <div>
                             <i class="fas fa-phone-alt me-2 text-warning"></i>
@@ -54,7 +54,8 @@
                         </div>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-xl position-fixed  d-none d-xl-block pb-300 w-full mt-5">
+                <nav id="shadowBox"
+                    class="navbar navbar-expand-xl position-fixed  d-none d-xl-block pb-300 w-full mt-5 trans">
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center w-full position-relative">
                             <a class="navbar-brand d-flex align-items-center" href="#"> <svg class="rotate-infinite"
@@ -90,8 +91,8 @@
                                 </svg> <span class="text-white fs-40">SERVION</span></a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-3 fs-18">
-                                    <li class="nav-item dropdown pos-static">
-                                        <a class="nav-link fw-bold text-white drop-up p-0" href="#" id="navbarDropdown"
+                                    <li class="nav-item dropdown pos-static drop-up">
+                                        <a class="nav-link fw-bold text-white  p-0" href="#" id="navbarDropdown"
                                             role="button">
                                             JourneyWorCX
                                             <span>
@@ -108,44 +109,46 @@
                                                     src="/assests/img/svg/dropup-arrow.svg" alt="dropupimg"></div>
                                             <div class="d-flex container2 bg-white rounded">
                                                 <div class="text-blue pt-44 pb-44 pl-100 b max-w-370 b-radius-10">
-                                                    <li class="bg-wh pl-40 pr-25"><a
-                                                            class="dropdown-item text-blue bg-transparent fs-18 fw-bold cl  pl-0 pb-15 pt-15"
+                                                    <li class="bg-wh pl-40"><a
+                                                            class="dropdown-item text-blue  bg-transparent fs-18 fw-bold cl  pl-0 pb-15 pt-15 pr-25"
                                                             href="#">Discovery
                                                             +
-                                                            LaunchPad</a></li>
-                                                    <li class="bg-wh pl-40 pr-25"><a
-                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15"
-                                                            href="#">OnBoard+</a>
+                                                            LaunchPad <span></span> </a></li>
+                                                    <li class="bg-wh pl-40"><a
+                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15 pr-25"
+                                                            href="#"> OnBoard+ <span></span> </a>
                                                     </li>
-                                                    <li class="bg-wh pl-40 pr-25"><a
-                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15"
-                                                            href="#">VoiceIQ</a>
+                                                    <li class="bg-wh pl-40 "><a
+                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15 pr-25"
+                                                            href="#">VoiceIQ <span></span></a>
                                                     </li>
-                                                    <li class="bg-wh pl-40 pr-25"><a
-                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15"
-                                                            href="#">Engage360</a>
+                                                    <li class="bg-wh pl-40 "><a
+                                                            class="dropdown-item text-blue cl bg-transparent fs-18 fw-bold border-top br-cl pl-0 pb-15 pt-15 pr-25"
+                                                            href="#">Engage360 <span></span></a>
                                                     </li>
-                                                    <li class="bg-wh pl-40 pr-25 position-relative dropdown-right">
-                                                        <a class="dropdown-item text-blue bg-transparent fs-18 fw-bold pl-0 pb-15 pt-15 d-flex justify-content-between align-items-center gap-4 border-top br-cl"
+                                                    <li class="bg-wh bg-wh1 pl-40  dropdown-right">
+
+
+                                                        <a class="dropdown-item text-blue bg-transparent cl fs-18 fw-bold pl-0 pb-15 pt-15 d-flex justify-content-between align-items-center gap-4 border-top br-cl pr-25 inter"
                                                             href="#">
                                                             Integrations
+
+                                                            <svg " xmlns=" http://www.w3.org/2000/svg" height="24px"
+                                                                viewBox="0 -960 960 960" width="24px" fill="#003873">
+                                                                <path
+                                                                    d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                                                            </svg>
+
                                                             <span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                                    viewBox="0 -960 960 960" width="24px"
-                                                                    fill="#003873">
-                                                                    <path
-                                                                        d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                        <!-- Side Dropdown -->
-                                                        <ul class="list-unstyled sub-menu-right bg-white">
+                                                            </span> </a> <!-- Side Dropdown -->
+                                                        <ul class="list-unstyled sub-menu-right  ">
                                                             <li class="inte-cl fs-14 let-space-4 fw-bold mb-4">
                                                                 INTEGRATIONS
                                                             </li>
                                                             <li class="p-12"><a
                                                                     class="text-blue fs-18 text-decoration-none hover-underline"
-                                                                    href="/services/crm-connectors/">CRM Connectors</a>
+                                                                    href="/services/crm-connectors/">CRM
+                                                                    Connectors</a>
                                                             </li>
                                                             <li class="p-12"><a
                                                                     class="text-blue fs-18 text-decoration-none hover-underline"
@@ -157,12 +160,15 @@
                                                                     Custom Widgets</a></li>
                                                             <li class="p-12"><a
                                                                     class="text-blue fs-18 text-decoration-none hover-underline"
-                                                                    href="/services/cx-platform-extensions/">CX Platform
+                                                                    href="/services/cx-platform-extensions/">CX
+                                                                    Platform
                                                                     Extensions</a></li>
                                                         </ul>
+
+
                                                     </li>
                                                 </div>
-                                                <div class="p">
+                                                <div class="p max-w-462">
                                                     <p class="fs-18 text-blue max-w-293 fw-bold">Map pain points, define
                                                         KPIs,
                                                         and
@@ -236,8 +242,8 @@
                                             </div>
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link fw-bold text-white drop-up p-0 " href="#" id="navbarDropdown"
+                                    <li class="nav-item dropdown drop-up">
+                                        <a class="nav-link fw-bold text-white  p-0 " href="#" id="navbarDropdown"
                                             role="button">
                                             Services
                                             <svg class="icon-rotate" xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -271,8 +277,8 @@
                                             </div>
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white drop-up fw-bold p-0" href="#" id="navbarDropdown"
+                                    <li class="nav-item dropdown drop-up">
+                                        <a class="nav-link text-white  fw-bold p-0" href="#" id="navbarDropdown"
                                             role="button">
                                             Industries
                                             <svg class="icon-rotate" xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -301,8 +307,8 @@
                                         </ul>
                                     </li>
                                     <li><a href="/" class=" text-decoration-none text-white fw-bold">Resources Hub</a>
-                                    <li class="nav-item dropdown dropdown-hover">
-                                        <a class="nav-link text-white drop-up fw-bold p-0" href="#" id="navbarDropdown"
+                                    <li class="nav-item dropdown dropdown-hover drop-up">
+                                        <a class="nav-link text-white  fw-bold p-0" href="#" id="navbarDropdown"
                                             role="button">
                                             About Us
                                             <svg class="icon-rotate" xmlns=" http://www.w3.org/2000/svg" height="24px"
@@ -469,8 +475,8 @@
                                                                 <button
                                                                     class="accordion-button collapsed pl-0 aco-cl fs-5 d-flex justify-content-between align-items-center w-100"
                                                                     type="button" data-bs-toggle="collapse"
-                                                                    data-bs-target="#collapsefour" aria-expanded="false"
-                                                                    aria-controls="collapsefour">
+                                                                    data-bs-target="#collapsefive" aria-expanded="false"
+                                                                    aria-controls="collapsefive">
                                                                     <span>Integrations</span>
                                                                     <span class="custom-icon ms-auto">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -482,8 +488,7 @@
                                                                     </span>
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapsefour" class="accordion-collapse collapse"
-                                                                data-bs-parent="#accordionExample">
+                                                            <div id="collapsefive" class="accordion-collapse collapse">
                                                                 <div
                                                                     class="accordion-body pl-15 d-flex justify-content-between flex-column">
                                                                     <a class="text-decoration-none fs-16 aco-cl border-top br-cl p-6"
@@ -738,16 +743,20 @@
                 </nav>
             </div>
     </header>
+    <div class="vh-100 "></div>
 
     <!-- Scrolled state -->
     <script>
         const contactInfo = document.getElementById("contactInfo");
-
+        const shadowBox = document.getElementById("shadowBox");
         window.addEventListener("scroll", () => {
             if (window.scrollY > 100) {
                 contactInfo.classList.add("scrolled");
+                shadowBox.classList.remove("mt-5");
             } else {
                 contactInfo.classList.remove("scrolled");
+                shadowBox.classList.add("mt-5");
+
             }
         });
     </script>
